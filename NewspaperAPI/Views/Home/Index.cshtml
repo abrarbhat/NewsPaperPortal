@@ -1,25 +1,242 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="jumbotron">
-    <h1>Contoso University</h1>
-</div>
-<div class="row">
-    <div class="col-md-4">
-        <h2>Welcome to Contoso University</h2>
-        <p>Contoso University is a sample application that
-        demonstrates how to use Entity Framework 6 in an 
-        ASP.NET MVC 5 web application.</p>
-    </div>
-    <div class="col-md-4">
-        <h2>Build it from scratch</h2>
-        <p>You can build the application by following the steps in the tutorial series on the ASP.NET site.</p>
-        <p><a class="btn btn-default" href="http://www.asp.net/mvc/tutorials/getting-started-with-ef-using-mvc/">See the tutorial &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Download it</h2>
-        <p>You can download the completed project.</p>
-        <p><a class="btn btn-default" href="https://webpifeed.blob.core.windows.net/webpifeed/Partners/ASP.NET%20MVC%20Application%20Using%20Entity%20Framework%20Code%20First.zip">Download &raquo;</a></p>
-    </div>
-</div>
+@*<div id="colorlib-main">
+    <section class="ftco-section ftco-no-pt ftco-no-pb bg-light">
+        <div class="container px-0">
+            <div class="row no-gutters">
+                <div class="col-md-4 d-flex">
+                    <div class="blog-entry ftco-animate active">
+                        <div class="carousel-blog owl-carousel">
+                            <div class="item">
+                                <a href="single.html" class="img" style="background-image: url(../../../../Scripts/images/image_1.jpg);"></a>
+                            </div>
+                            <div class="item">
+                                <a href="single.html" class="img" style="background-image: url(../../../../Scripts/images/image_7.jpg);"></a>
+                            </div>
+                            <div class="item">
+                                <a href="single.html" class="img" style="background-image: url(../../../../Scripts/images/image_8.jpg);"></a>
+                            </div>
+                        </div>
+                        <div class="text p-4">
+                            <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+                            <div class="meta-wrap">
+                                <p class="meta">
+                                    <span><i class="icon-calendar mr-2"></i>Sept. 10, 2019</span>
+                                    <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+                                    <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+                                </p>
+                            </div>
+                            <p class="mb-4">A small river named Duden flows by their place and supplies</p>
+                            <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 d-flex">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="blog-entry ftco-animate d-md-flex align-items-center">
+                                <a href="https://vimeo.com/45830194" class="img img-2 popup-vimeo d-flex align-items-center justify-content-center" style="background-image: url(../../../../Scripts/../../../../Scripts/images/image_2.jpg);">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="ion-ios-play"></span>
+                                    </div>
+                                </a>
+                                <div class="text text-2 p-4">
+                                    <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+                                    <div class="meta-wrap">
+                                        <p class="meta">
+                                            <span><i class="icon-calendar mr-2"></i>Sept. 10, 2019</span>
+                                            <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+                                            <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+                                        </p>
+                                    </div>
+                                    <p class="mb-4">A small river named Duden flows by their place and supplies</p>
+                                    <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="blog-entry ftco-animate d-md-flex align-items-center">
+                                <a href="single.html" class="img img-2 order-md-last" style="background-image: url(../../../../Scripts/images/image_3.jpg);"></a>
+                                <div class="text text-2 text-md-right p-4">
+                                    <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+                                    <div class="meta-wrap">
+                                        <p class="meta">
+                                            <span><i class="icon-calendar mr-2"></i>Sept. 10, 2019</span>
+                                            <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+                                            <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+                                        </p>
+                                    </div>
+                                    <p class="mb-4">A small river named Duden flows by their place and supplies</p>
+                                    <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="blog-entry ftco-animate">
+                        <a href="single.html" class="img" style="background-image: url(../../../../Scripts/images/image_4.jpg);"></a>
+                        <div class="text p-4">
+                            <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+                            <div class="meta-wrap">
+                                <p class="meta">
+                                    <span><i class="icon-calendar mr-2"></i>Sept. 10, 2019</span>
+                                    <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+                                    <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+                                </p>
+                            </div>
+                            <p class="mb-4">A small river named Duden flows by their place and supplies</p>
+                            <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="blog-entry ftco-animate">
+                        <a href="single.html" class="img" style="background-image: url(../../../../Scripts/images/image_5.jpg);"></a>
+                        <div class="text p-4">
+                            <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+                            <div class="meta-wrap">
+                                <p class="meta">
+                                    <span><i class="icon-calendar mr-2"></i>Sept. 10, 2019</span>
+                                    <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+                                    <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+                                </p>
+                            </div>
+                            <p class="mb-4">A small river named Duden flows by their place and supplies</p>
+                            <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="blog-entry ftco-animate">
+                        <a href="single.html" class="img" style="background-image: url(../../../../Scripts/images/image_6.jpg);"></a>
+                        <div class="text p-4">
+                            <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+                            <div class="meta-wrap">
+                                <p class="meta">
+                                    <span><i class="icon-calendar mr-2"></i>Sept. 10, 2019</span>
+                                    <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+                                    <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+                                </p>
+                            </div>
+                            <p class="mb-4">A small river named Duden flows by their place and supplies</p>
+                            <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 d-flex">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="blog-entry ftco-animate d-md-flex align-items-center">
+                                <a href="single.html" class="img img-2" style="background-image: url(../../../../Scripts/images/image_7.jpg);"></a>
+                                <div class="text text-2 p-4">
+                                    <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+                                    <div class="meta-wrap">
+                                        <p class="meta">
+                                            <span><i class="icon-calendar mr-2"></i>Sept. 10, 2019</span>
+                                            <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+                                            <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+                                        </p>
+                                    </div>
+                                    <p class="mb-4">A small river named Duden flows by their place and supplies</p>
+                                    <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="blog-entry ftco-animate d-md-flex align-items-center">
+                                <a href="single.html" class="img img-2 order-md-last" style="background-image: url(../../../../Scripts/images/image_8.jpg);"></a>
+                                <div class="text text-2 p-4 text-md-right">
+                                    <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+                                    <div class="meta-wrap">
+                                        <p class="meta">
+                                            <span><i class="icon-calendar mr-2"></i>Sept. 10, 2019</span>
+                                            <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+                                            <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+                                        </p>
+                                    </div>
+                                    <p class="mb-4">A small river named Duden flows by their place and supplies</p>
+                                    <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="blog-entry ftco-animate">
+                        <a href="single.html" class="img" style="background-image: url(../../../../Scripts/images/image_6.jpg);"></a>
+                        <div class="text p-4">
+                            <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+                            <div class="meta-wrap">
+                                <p class="meta">
+                                    <span><i class="icon-calendar mr-2"></i>Sept. 10, 2019</span>
+                                    <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+                                    <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+                                </p>
+                            </div>
+                            <p class="mb-4">A small river named Duden flows by their place and supplies</p>
+                            <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="blog-entry ftco-animate">
+                        <a href="single.html" class="img" style="background-image: url(../../../../Scripts/images/image_4.jpg);"></a>
+                        <div class="text p-4">
+                            <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+                            <div class="meta-wrap">
+                                <p class="meta">
+                                    <span><i class="icon-calendar mr-2"></i>Sept. 10, 2019</span>
+                                    <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+                                    <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+                                </p>
+                            </div>
+                            <p class="mb-4">A small river named Duden flows by their place and supplies</p>
+                            <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="blog-entry ftco-animate d-flex flex-column-reverse">
+                        <a href="single.html" class="img" style="background-image: url(../../../../Scripts/images/image_5.jpg);"></a>
+                        <div class="text p-4">
+                            <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+                            <div class="meta-wrap">
+                                <p class="meta">
+                                    <span><i class="icon-calendar mr-2"></i>Sept. 10, 2019</span>
+                                    <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+                                    <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+                                </p>
+                            </div>
+                            <p class="mb-4">A small river named Duden flows by their place and supplies</p>
+                            <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="blog-entry ftco-animate">
+                        <a href="single.html" class="img" style="background-image: url(../../../../Scripts/images/image_6.jpg);"></a>
+                        <div class="text p-4">
+                            <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+                            <div class="meta-wrap">
+                                <p class="meta">
+                                    <span><i class="icon-calendar mr-2"></i>Sept. 10, 2019</span>
+                                    <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+                                    <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+                                </p>
+                            </div>
+                            <p class="mb-4">A small river named Duden flows by their place and supplies</p>
+                            <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div><!-- END COLORLIB-MAIN -->
+    </div><!-- END COLORLIB-PAGE -->
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>*@
